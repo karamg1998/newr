@@ -22,7 +22,14 @@ class student
   {
    return this.date_of_birth.getFullYear();
   }
-  
+   get_age()
+  {
+ return Math.abs(2022-(this.date_of_birth.getFullYear()));
+  }
+  get_name()
+  {
+   return this.first_name+this.last_name;
+  } 
 }
 
 var student1=new student('karamveer',' garathi',25,'male','4-3-1998');
